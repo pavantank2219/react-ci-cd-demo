@@ -33,7 +33,7 @@ jobs:
           ls -al ./build  # List the contents of the build output folder (React's default build output folder is `build`)
 
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           name: github-pages
           path: ./build  # React's build folder is usually `build`
